@@ -38,7 +38,6 @@ main {
     width: 100%;
     height: 95vh;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 }
@@ -48,7 +47,7 @@ main {
 }
 
 .sect-1 hgroup {
-    width: 60%;
+    width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -57,7 +56,6 @@ main {
     text-align: center;
     gap: 10%;
 }
-
 .sect-1 h1 {
     font-size: 5rem;
     background-image: linear-gradient(90deg, #22577A, #80ED99);
@@ -67,6 +65,7 @@ main {
 
 .sect-1 p {
     font-size: 3rem;
+    width: 100%;
     background-image: linear-gradient(90deg, #22577A, #80ED99);
     -webkit-background-clip: text;
     color: transparent;
@@ -107,44 +106,48 @@ main {
 
 .sect-2 {
     width: 100%;
-    height: 40vh;
+    height: 70vh;
     background-color: #22577A;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10%;
 }
 
 .sect-2 div {
-    width: 30%;
+    width: 40%;
     height: 70%;
     background-color: #56AB91;
     border-radius: 30px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     color: #036666;
+    overflow: hidden;
 }
 
 .sect-2 div hgroup {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
-    width: 60%;
+    width: 100%;
+    height: 100%;
 }
 
-.sect-2 div hgroup h3 {
+.sect-2 div h3 {
     width: 100%;
     text-align: center;
     background-color: #80ED99;
-    border-bottom-right-radius: 30px;
 }
 
 .sect-2 div hgroup p {
-    font-size: 0.9rem;
+    font-size: 1.7rem;
 }
+
 .sect-2 div hgroup button {
 width: 40%;
+height: 15%;
 border: none;
 border-radius: 30px;
 cursor: pointer;
@@ -152,17 +155,11 @@ color: aliceblue;
 background-color: #036666;
 transition: 0.4s;
 }
-.sect-2 div hgroup button:hover {
+.sect-2 div hgroup button:hover{
     background-color: aliceblue;
     transform: translate(0, -3px);
     color: #036666;
 }
-.img-card1 {
-    height: 100%;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
 /* ------------------------------------------ */
 .sect-3 {
     width: 100%;
