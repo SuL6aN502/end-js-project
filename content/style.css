@@ -6,17 +6,30 @@
     box-sizing: border-box;
     font-family: 'Lemonada', cursive;
 }
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: aliceblue; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #56AB91; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #036666; 
+  }
 html{
     scroll-behavior: smooth;
 }
 .fast-btn1{
     width: 7%;
     position: fixed;
-    right: 0;
     top: 10%;
+    left: 0;
     z-index: 99;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     border: none;
     background-color: #31947B;
     color: aliceblue;
@@ -29,17 +42,18 @@ html{
 }
 main {
     width: 100%;
-    height: 280vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
 
 .sect-1 {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
 }
 
 .sect-1 img {
@@ -54,9 +68,12 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10%;
+    gap: 5%;
+
 }
 .sect-1 h1 {
+    width: 20%;
+    height: 30%;
     font-size: 5rem;
     background-image: linear-gradient(90deg, #22577A, #80ED99);
     -webkit-background-clip: text;
@@ -64,7 +81,7 @@ main {
 }
 
 .sect-1 p {
-    font-size: 3rem;
+    font-size: 2.95rem;
     width: 100%;
     background-image: linear-gradient(90deg, #22577A, #80ED99);
     -webkit-background-clip: text;
@@ -72,6 +89,7 @@ main {
 }
 
 .sect-1 a {
+    transition: 0.4s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,10 +98,10 @@ main {
     background-color: #80ED99;
     border: none;
     border-radius: 100px;
-    transition: 0.4s;
     cursor: pointer;
     text-decoration: none;
     color: black;
+    font-size: 1.5rem;
 }
 
 .sect-1 a:hover {
@@ -107,42 +125,50 @@ main {
 .sect-2 {
     width: 100%;
     height: 70vh;
-    background-color: #22577A;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10%;
+    background-color: #004b23;
 }
 
 .sect-2 div {
     width: 40%;
-    height: 70%;
+    height: 80%;
     background-color: #56AB91;
     border-radius: 30px;
     display: flex;
     flex-direction: column-reverse;
-    color: #036666;
+    align-items: end;
+    color: aliceblue;
+    border-left:#248277 30px solid;
     overflow: hidden;
 }
-
 .sect-2 div hgroup {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
-    text-align: center;
+    text-align: right;
+    padding: 20px;
     width: 100%;
     height: 100%;
 }
 
 .sect-2 div h3 {
-    width: 100%;
-    text-align: center;
-    background-color: #80ED99;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 20px;
 }
 
 .sect-2 div hgroup p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .sect-2 div hgroup button {
@@ -154,6 +180,7 @@ cursor: pointer;
 color: aliceblue;
 background-color: #036666;
 transition: 0.4s;
+font-size: 1.2rem;
 }
 .sect-2 div hgroup button:hover{
     background-color: aliceblue;
@@ -168,6 +195,7 @@ transition: 0.4s;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    gap: 6%;
 }
 .sect-3 .img-sect3{
     width: 35%;
@@ -184,7 +212,7 @@ transition: 0.4s;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    width: 60%;
+    width: 50%;
     height: 50%;
     gap: 10%;
     background-image: linear-gradient(90deg, #22577A, #14746F, #80ED99);
@@ -196,5 +224,82 @@ transition: 0.4s;
 }
 .sect-3 hgroup p{
     font-size: 2rem;
-    width: 70%;
+    width: 100%;
+}
+.form1{
+    width: 30%;
+    height: 60vh;
+    background-color: #31947bc5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    color: aliceblue;
+}
+.container_input{
+height: 20%;
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: end;
+position: relative;
+margin-bottom: 40%;
+}
+
+div input {
+    text-align: right;
+    border: none;
+    background-color: #ffffff00;
+    color: aliceblue;
+    width: 100%;
+    height: 60%;
+    transition: 0.3s;
+    position: relative;
+    border-bottom: #004b23 2px solid;
+}
+div input:focus{
+    outline: none !important;
+    border-bottom: #004b23 2px solid;
+}
+label{
+    /* position: absolute; */
+    /* margin-bottom: 100px; */
+}
+div input::placeholder{
+    color:aliceblue;
+    padding-right: 10px;
+    right: 0%;
+    margin-bottom: 100px;
+}
+.sheckBox{
+margin:  0 50% 0 0;
+}
+form button{
+    width: 80%;
+    height: 12%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    background: #80ED99;
+    transition: 0.5s;
+}
+form button:hover{
+background: #036666;
+transform: translate(0,-5px);
+}
+.container_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 10%;
+    background-color: #80ed997a;
+    border-radius: 20px;
+}
+.container_img img{
+height: 80%;
+cursor: pointer;
 }
