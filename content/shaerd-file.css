@@ -15,7 +15,7 @@ header {
     align-items: center;
     gap: 20%;
     z-index: 99;
-    border-bottom: black 2px solid;
+    border-bottom: #036666 2px solid;
     position: fixed;
 }
 
@@ -72,7 +72,7 @@ header>nav>ul li a {
 
 header>nav>ul li a:hover {
     transform: translate(0, -5px);
-    color: #006363;
+    color: #80ED99;
     border-right: aliceblue 3px solid;
 }
 .finish-border{

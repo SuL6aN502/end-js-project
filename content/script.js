@@ -53,8 +53,27 @@ let p1 = document.createElement("p");
 let footer = document.createElement("footer");
 let every = document.createElement('h4');
 let date = new Date ().getFullYear();
+// ---------------------------------------------------------------------------
+let form = document.createElement('form');
+let input1 = document.createElement('input');
+let input1_card = document.createElement('input');
+let tow_Element = document.createElement('div');
+let input1_123 = document.createElement('input');
+let input1_history = document.createElement('input');
 
 
+let label1 = document.createElement('label');
+let container_input = document.createElement('div');
+let container_img = document.createElement('div');
+let img1_form1 = document.createElement('img');
+let img2_form1 = document.createElement('img');
+let img3_form1 = document.createElement('img');
+
+let sheckBox = document.createElement('input');
+let label_check = document.createElement('div')
+let btn3 = document.createElement('button');
+let sect_1_pay = document.createElement('section')
+let sect_2_pay = document.createElement('section')
 
 // ------------------------------------------
 body.appendChild(header);
@@ -64,12 +83,18 @@ logo.addEventListener('click' ,function(){
     main.appendChild(sect_1);
     main.appendChild(sect_2);
     main.appendChild(sect_3);
-    main.removeChild(form);
+    main.removeChild(sect_1_pay);
+    main.removeChild(sect_2_pay);
     sect_2.appendChild(card1);
     sect_2.appendChild(card2);
     main.style.height = 'auto';
-
-})
+    main.style.flexDirection = 'column';
+    main.style.justifyContent = 'auto';
+    main.style.flexDirection = 'column';
+    main.style.alignItems = 'auto';
+    
+  
+  })
 logo.setAttribute("data-aos", "fade-right");
 // -----------------------------------
 header.appendChild(nav);
@@ -85,45 +110,66 @@ ul.appendChild(li3);
 li3.appendChild(a3);
 a3.href = "#";
 a3.innerHTML = "من نحن";
+// -------------------------Products-------------------------
+let sect_1_Products1 = document.createElement('section');
+
 ul.appendChild(li2);
 li2.appendChild(a2);
 a2.href = "#";
 a2.innerHTML = "المنتجات";
-// -------------
+a2.addEventListener('click' , ()=>{
+  main.appendChild(sect_1_Products1);
+  sect_1_Products1.classList.add('sect_1_Products1');
+  main.removeChild(sect_1);
+  main.removeChild(sect_2);
+  main.removeChild(sect_3);
+
+})
+// -----------------------------------------------------------------------
 ul.appendChild(li1);
 li1.appendChild(a1);
 a1.href = "#";
 a1.innerHTML = "الصفحة الرئيسية";
 a1.classList.add('finish-border')
+a1.addEventListener('click' ,function(){
+  main.appendChild(sect_1);
+  main.appendChild(sect_2);
+  main.appendChild(sect_3);
+  main.removeChild(sect_1_pay);
+  main.removeChild(sect_2_pay);
+  sect_2.appendChild(card1);
+  sect_2.appendChild(card2);
+  main.style.height = 'auto';
+  main.style.flexDirection = 'column';
+  main.style.justifyContent = 'auto';
+  main.style.flexDirection = 'column';
+  main.style.alignItems = 'auto';
+  
+
+})
 // -------------
 
 // ------------------------------------------
 body.appendChild(main);
 main.appendChild(fast_btn1);
-let form = document.createElement('form');
-let input1 = document.createElement('input');
-let label1 = document.createElement('label');
-let container_input = document.createElement('div');
-let container_img = document.createElement('div');
-let img1_form1 = document.createElement('img');
-let img2_form1 = document.createElement('img');
-let img3_form1 = document.createElement('img');
-let sheckBox = document.createElement('input');
-let btn3 = document.createElement('button');
 // --------------------------------------------------------------------------------------------------------------------------------
 fast_btn1.addEventListener('click' , ()=>{
 main.removeChild(sect_1);
+main.appendChild(sect_1_pay);
+main.appendChild(sect_2_pay);
+sect_2_pay.classList.add('sect-2-edit1')
+sect_1_pay.classList.add('sect-1-edit1');
 main.removeChild(sect_2);
 main.removeChild(sect_3);
 sect_2.appendChild(card1);
 sect_2.appendChild(card2);
 main.style.height = '100vh';
 main.style.justifyContent = 'center';
-
+main.style.flexDirection = 'row';
 main.style.alignItems = 'center';
 // ------------------------------------------------------
 
-main.appendChild(form);
+sect_2_pay.appendChild(form);
 form.classList.add('form1');
 form.appendChild(container_img);
 container_img.classList.add('container_img');
@@ -133,21 +179,53 @@ container_img.appendChild(img3_form1);
 img1_form1.src = 'imges/apply pay.png';
 img2_form1.src = 'imges/paypal.png';
 img3_form1.src = 'imges/google-pay.png';
-container_input.appendChild(label1);
 container_input.classList.add('container_input');
-label1.innerHTML = 'المبلغ';
+label1.innerHTML = 'ادخال البطاقة';
 label1.style.textAlign = 'right';
 label1.style.width = '100%';
 label1.htmlFor = 'input1';
+
 form.appendChild(container_input);
 container_input.appendChild(input1);
-container_input.appendChild(sheckBox);
-sheckBox.type.checkBox
-sheckBox.type = 'checkbox'
-sheckBox.classList.add('sheckBox1')
+container_input.appendChild(label_check);
+label_check.appendChild(label1);
+label_check.appendChild(sheckBox);
+label_check.classList.add('label_check');
+sheckBox.id = 'input1';
+sheckBox.type = 'checkbox';
+sheckBox.classList.add('sheckBox1');
 input1.type = 'text';
-input1.id = 'input1';
 input1.placeholder = 'ادخل المبلغ';
+let tow_Element_rel = document.createElement('div');
+sheckBox.checked = false;
+tow_Element.appendChild(input1_card);
+tow_Element.appendChild(tow_Element_rel);
+tow_Element_rel.appendChild(input1_123);
+tow_Element_rel.appendChild(input1_history);
+input1_card.placeholder = '0000 0000 0000 0000';
+input1_history.placeholder = 'yy/mm';
+input1_123.placeholder = '123';
+tow_Element_rel.classList.add('tow_Element_rel');
+tow_Element.classList.add('tow_Element');
+input1_123.classList.add('input1_123');
+input1_card.classList.add('input1_card');
+input1_history.classList.add('input1_history')
+input1.classList.add('input1');
+
+
+sheckBox.addEventListener('click', () =>{
+
+if(sheckBox.checked == true){
+  form.appendChild(tow_Element);
+
+}else{
+  form.removeChild(input1_card);
+  form.removeChild(tow_Element);
+}
+})
+
+
+
 form.appendChild(btn3)
 btn3.innerHTML = 'تبرع الان';
 })
