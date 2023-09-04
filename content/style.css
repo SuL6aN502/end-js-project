@@ -244,7 +244,7 @@ main {
 /* -------------------------------------------------------------------------- */
 .sect-1-edit1 {
     width: 55%;
-    height: 100%;
+    height: 100vh;
     background-image: url(/content/imges/img1.jpg);
     background-size: cover;
     background-position: center;
@@ -253,7 +253,7 @@ main {
 
 .sect-2-edit1 {
     width: 45%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,13 +295,20 @@ div .input1 {
     height: 60%;
     transition: 0.3s;
     position: relative;
-    border-bottom: #78C6A3 2px solid;
+    border-bottom: #80ED99 3px solid;
 }
-div .input1::placeholder{
 
+.input1:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+div .input1::placeholder {
+    color: aliceblue;
     text-align: right;
 
 }
+
 div input:focus {
     outline: none !important;
     border-bottom: #004b23 2px solid;
@@ -315,7 +322,7 @@ label {
 
 div input::placeholder {
     text-align: center;
-    font-size:1.05rem;
+    font-size: 1.1rem;
 }
 
 form button {
@@ -325,7 +332,7 @@ form button {
     border: none;
     cursor: pointer;
     font-size: 1.4rem;
-    background: #78C6A3;
+    background-color: #78C6A3;
     transition: 0.5s;
 }
 
@@ -333,7 +340,9 @@ form button:hover {
     background: #036666;
     transform: translate(0, -5px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: aliceblue;
 }
+
 .container_img {
     display: flex;
     flex-direction: row;
@@ -352,6 +361,7 @@ form button:hover {
 
 .container_img img:hover {}
 
+/* ------------------------------------------------- */
 .tow_Element {
     display: flex;
     flex-direction: column;
@@ -359,7 +369,7 @@ form button:hover {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 80%;
+    width: 25%;
     height: 20%;
     position: absolute;
 }
@@ -368,28 +378,47 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 10%;
     height: 30%;
 }
 
-.tow_Element input , .tow_Element_rel input{
-    border-radius: 20px;
-    
+.tow_Element input,
+.input1,
+.tow_Element_rel input {
     border: none;
+    transition: 0.5s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: none;
+    color: aliceblue;
+    text-align: right;
+    border-bottom: #80ED99 1px solid;
+}
+
+.tow_Element input::placeholder,
+.tow_Element_rel input::placeholder {
+    text-align: right;
+    color: aliceblue;
+}
+
+.tow_Element input:hover,
+.tow_Element_rel input:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-bottom: #80ED99 1px solid;
 }
 
 .input1_card {
-    width: 20%;
+    width: 100%;
     height: 30%;
 }
 
 .input1_123 {
-    width: 15%;
+    width: 25%;
     height: 100%;
 }
 
 .input1_history {
-    width: 46.4%;
+    width: 65%;
     height: 100%;
 }
 
@@ -404,8 +433,98 @@ form button:hover {
 }
 
 /* ------------------------------------------------------------------------- */
-/* .sect_1_Products1{
+.sect_1_Products1 {
     width: 100%;
-    height: 50%;
+    height: 20vh;
     background-color: #14746F;
-} */
+    align-items: end;
+    justify-content: end;
+    gap: 3%;
+}
+
+.sect_1_Products1 i {
+    font-size: 30px;
+    position: relative;
+    color: white;
+    bottom: 8%;
+    right: 4%;
+    border-radius: 100px;
+    padding: 10px;
+    border: aliceblue 3px solid;
+    cursor: pointer;
+}
+
+.sect_2_Products1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.cards_Products1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 60vh;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_Products1 div {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height:50%;
+    width: 100%;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: #004b23;
+}
+.cards_Products1 h2 {
+}
+.cards_Products1 p {
+}
+.cards_Products1 p::after{
+    content: '50$';
+    color: #80ED99;
+    font-size: 0.8rem;
+    text-decoration:line-through;
+    padding: 0 0px 0 6px ;
+}
+
+.cards_Products1 button {
+    height: 6vh;
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #80ED99;
+}
+.cards_Products1 button:hover {
+    background: #14746F;
+    color: aliceblue;
+    transform: translate(0,-10px);
+}
+.cards_Products1 img {
+    height: 40%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+/* -------------------------------------------------------------------------------------- */
+.sect_1_our{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.sect_1_our img{
+    width: 50%;
+}

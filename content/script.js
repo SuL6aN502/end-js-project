@@ -51,87 +51,83 @@ let btn1 = document.createElement("a");
 let p1 = document.createElement("p");
 // ------------------------------------------------------------------------------------------------
 let footer = document.createElement("footer");
-let every = document.createElement('h4');
-let date = new Date ().getFullYear();
+let every = document.createElement("h4");
+let date = new Date().getFullYear();
 // ---------------------------------------------------------------------------
-let form = document.createElement('form');
-let input1 = document.createElement('input');
-let input1_card = document.createElement('input');
-let tow_Element = document.createElement('div');
-let input1_123 = document.createElement('input');
-let input1_history = document.createElement('input');
+let form = document.createElement("form");
+let input1 = document.createElement("input");
+let input1_card = document.createElement("input");
+let tow_Element = document.createElement("div");
+let input1_123 = document.createElement("input");
+let input1_history = document.createElement("input");
 
+let label1 = document.createElement("label");
+let container_input = document.createElement("div");
+let container_img = document.createElement("div");
+let img1_form1 = document.createElement("img");
+let img2_form1 = document.createElement("img");
+let img3_form1 = document.createElement("img");
 
-let label1 = document.createElement('label');
-let container_input = document.createElement('div');
-let container_img = document.createElement('div');
-let img1_form1 = document.createElement('img');
-let img2_form1 = document.createElement('img');
-let img3_form1 = document.createElement('img');
-
-let sheckBox = document.createElement('input');
-let label_check = document.createElement('div')
-let btn3 = document.createElement('button');
-let sect_1_pay = document.createElement('section')
-let sect_2_pay = document.createElement('section')
-
+let sheckBox = document.createElement("input");
+let label_check = document.createElement("div");
+let btn3 = document.createElement("button");
+let sect_1_pay = document.createElement("section");
+let sect_2_pay = document.createElement("section");
+// --------------------------------------------------------------------------
+let sect_1_Products1 = document.createElement("section");
+let sect_2_Products1 = document.createElement("section");
+let accont = document.createElement("i");
+let basket = document.createElement("i");
+a2.href = "#";
+a2.innerHTML = "المنتجات";
+let card_Products1 = document.createElement("section");
+let img1_products1 = document.createElement("img");
+img1_products1.src = "./imges/batl.png";
+let container_products = document.createElement("div");
+let h1_products1 = document.createElement("h2");
+h1_products1.innerHTML = "حوض فلترة المياة ";
+let p1_products1 = document.createElement("p");
+p1_products1.innerHTML = "19.99$";
+let btn1_products1 = document.createElement("button");
+btn1_products1.innerHTML = "اضف الى السلة";
+// ------------------------------
+let card_Products2 = document.createElement("div");
+let img2_products1 = document.createElement("img");
+img2_products1.src = "./imges/batl2.png";
+let container_products2 = document.createElement("div");
+let h2_products1 = document.createElement("h2");
+h2_products1.innerHTML = "طشاش الفلترة";
+let p2_products1 = document.createElement("p");
+p2_products1.innerHTML = "4.99$";
+let btn2_products1 = document.createElement("button");
+btn2_products1.innerHTML = "اضف الى السلة";
+// ------------------------------
+let card_Products3 = document.createElement("div");
+let img3_products1 = document.createElement("img");
+img3_products1.src = "./imges/batl3.jpg";
+let container_products3 = document.createElement("div");
+let h3_products1 = document.createElement("h2");
+h3_products1.innerHTML = "الفلتر السريع";
+let p3_products1 = document.createElement("p");
+p3_products1.innerHTML = "9.99$";
+let btn3_products1 = document.createElement("button");
+btn3_products1.innerHTML = "اضف الى السلة";
+// ------------------------------
+let card_Products4 = document.createElement("div");
+let img4_products1 = document.createElement("img");
+img4_products1.src = "./imges/batl4.jpg";
+let container_products4 = document.createElement("div");
+let h4_products1 = document.createElement("h2");
+h4_products1.innerHTML = "الحياة النفية";
+let p4_products1 = document.createElement("p");
+p4_products1.innerHTML = "29.99$";
+let btn4_products1 = document.createElement("button");
+btn4_products1.innerHTML = "اضف الى السلة";
 // ------------------------------------------
 body.appendChild(header);
 nav.appendChild(logo);
 logo.innerHTML = "تآزرَ";
-logo.addEventListener('click' ,function(){
-    main.appendChild(sect_1);
-    main.appendChild(sect_2);
-    main.appendChild(sect_3);
-    main.removeChild(sect_1_pay);
-    main.removeChild(sect_2_pay);
-    sect_2.appendChild(card1);
-    sect_2.appendChild(card2);
-    main.style.height = 'auto';
-    main.style.flexDirection = 'column';
-    main.style.justifyContent = 'auto';
-    main.style.flexDirection = 'column';
-    main.style.alignItems = 'auto';
-    
-  
-  })
-logo.setAttribute("data-aos", "fade-right");
-// -----------------------------------
-header.appendChild(nav);
-nav.appendChild(ul);
-ul.setAttribute("data-aos", "fade-left");
-// -------------
-ul.appendChild(li4);
-li4.appendChild(a4);
-a4.href = "#";
-a4.innerHTML = "احصائيات";
-// -------------
-ul.appendChild(li3);
-li3.appendChild(a3);
-a3.href = "#";
-a3.innerHTML = "من نحن";
-// -------------------------Products-------------------------
-let sect_1_Products1 = document.createElement('section');
-
-ul.appendChild(li2);
-li2.appendChild(a2);
-a2.href = "#";
-a2.innerHTML = "المنتجات";
-a2.addEventListener('click' , ()=>{
-  main.appendChild(sect_1_Products1);
-  sect_1_Products1.classList.add('sect_1_Products1');
-  main.removeChild(sect_1);
-  main.removeChild(sect_2);
-  main.removeChild(sect_3);
-
-})
-// -----------------------------------------------------------------------
-ul.appendChild(li1);
-li1.appendChild(a1);
-a1.href = "#";
-a1.innerHTML = "الصفحة الرئيسية";
-a1.classList.add('finish-border')
-a1.addEventListener('click' ,function(){
+logo.addEventListener("click", function () {
   main.appendChild(sect_1);
   main.appendChild(sect_2);
   main.appendChild(sect_3);
@@ -139,96 +135,237 @@ a1.addEventListener('click' ,function(){
   main.removeChild(sect_2_pay);
   sect_2.appendChild(card1);
   sect_2.appendChild(card2);
-  main.style.height = 'auto';
-  main.style.flexDirection = 'column';
-  main.style.justifyContent = 'auto';
-  main.style.flexDirection = 'column';
-  main.style.alignItems = 'auto';
-  
+  main.style.height = "auto";
+  main.style.flexDirection = "column";
+  main.style.justifyContent = "auto";
+  main.style.flexDirection = "column";
+  main.style.alignItems = "auto";
+});
+logo.setAttribute("data-aos", "fade-right");
+// -----------------------------------
+header.appendChild(nav);
+nav.appendChild(ul);
+ul.setAttribute("data-aos", "fade-left");
+// -------------
+ul.appendChild(li3);
+li3.appendChild(a3);
+a3.href = "#";
+a3.innerHTML = "من نحن";
+let sect_1_our = document.createElement('section');
+sect_1_our.classList.add('sect_1_our');
+let img1_our = document.createElement('img');
+img1_our.src = './imges/company.svg'
+sect_1_our.appendChild(img1_our);
+let hgroup5 = document.createElement('hgroup');
+let h2_hgroup5 = document.createElement('h2')
+let p_hgroup5 = document.createElement('p');
+hgroup5.classList.add('hgroup5');
+sect_1_our.appendChild(hgroup5)
+a3.onclick = () => {
+  sect_1.style.display ='none';
+  sect_2.style.display ='none';
+  sect_3.style.display ='none';
+  sect_1_Products1.style.display ='none';
+  sect_2_Products1.style.display ='none';
+  sect_1_pay.style.display ='none';
+  sect_2_pay.style.display ='none';
+  // --------------------------------------------------
+  main.appendChild(sect_1_our);
+  sect_1_our.style.display = 'flex';
+}
+// -------------
+ul.appendChild(li4);
+li4.appendChild(a4);
+a4.href = "#";
+a4.innerHTML = "احصائيات";
+// -------------------------Products-------------------------
 
-})
+accont.className = "fa-solid fa-user";
+basket.className = "fa-solid fa-basket-shopping";
+ul.appendChild(li2);
+li2.appendChild(a2);
+
+a2.addEventListener("click", () => {
+  sect_1_Products1.style.display = "flex";
+  main.style.flexDirection = "column";
+  sect_1_our.style.display = 'none'
+  sect_1_Products1.appendChild(accont);
+  sect_1_Products1.appendChild(basket);
+  sect_2_Products1.style.display = "flex";
+  sect_1_Products1.classList.add("sect_1_Products1");
+  sect_2_Products1.classList.add("sect_2_Products1");
+  // --------------------------------
+  sect_2_Products1.appendChild(card_Products1);
+  card_Products1.appendChild(img1_products1);
+  card_Products1.appendChild(container_products);
+  container_products.className = "container_products";
+
+  container_products.appendChild(h1_products1);
+  container_products.appendChild(p1_products1);
+  container_products.appendChild(btn1_products1);
+  // -----------------------------------------------
+  sect_2_Products1.appendChild(card_Products2);
+  card_Products2.appendChild(img2_products1);
+  card_Products2.appendChild(container_products2);
+  container_products2.className = "container_products";
+
+  container_products2.appendChild(h2_products1);
+  container_products2.appendChild(p2_products1);
+  container_products2.appendChild(btn2_products1);
+  // -----------------------------------------------------------
+  sect_2_Products1.appendChild(card_Products3);
+  card_Products3.appendChild(img3_products1);
+  card_Products3.appendChild(container_products3);
+  container_products3.className = "container_products";
+
+  container_products3.appendChild(h3_products1);
+  container_products3.appendChild(p3_products1);
+  container_products3.appendChild(btn3_products1);
+  // -----------------------------------------------------------
+  sect_2_Products1.appendChild(card_Products4);
+  card_Products4.appendChild(img4_products1);
+  card_Products4.appendChild(container_products4);
+  container_products4.className = "container_products";
+
+  container_products4.appendChild(h4_products1);
+  container_products4.appendChild(p4_products1);
+  container_products4.appendChild(btn4_products1);
+  // --------------------------------
+  card_Products1.classList.add("cards_Products1");
+  card_Products2.classList.add("cards_Products1");
+  card_Products3.classList.add("cards_Products1");
+  card_Products4.classList.add("cards_Products1");
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+});
+// -----------------------------------------------------------------------
+ul.appendChild(li1);
+li1.appendChild(a1);
+a1.href = "#";
+a1.innerHTML = "الصفحة الرئيسية";
+a1.classList.add("finish-border");
+a1.addEventListener("click", function () {
+  main.appendChild(sect_1);
+  main.appendChild(sect_2);
+  main.appendChild(sect_3);
+  sect_1_our.style.display = 'none'
+  sect_1.style.display = "flex";
+  sect_2.style.display = "flex";
+  sect_3.style.display = "flex";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  sect_2.appendChild(card1);
+  sect_2.appendChild(card2);
+  main.style.height = "auto";
+  main.style.flexDirection = "column";
+  main.style.justifyContent = "auto";
+  main.style.flexDirection = "column";
+  main.style.alignItems = "auto";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+});
 // -------------
 
+main.appendChild(sect_1);
+main.appendChild(sect_2);
+main.appendChild(sect_3);
+main.appendChild(sect_1_pay);
+main.appendChild(sect_2_pay);
+main.appendChild(sect_1_Products1);
+main.appendChild(sect_2_Products1);
+sect_1.style.display = "flex";
+sect_2.style.display = "flex";
+sect_3.style.display = "flex";
+sect_1_pay.style.display = "none";
+sect_2_pay.style.display = "none";
+sect_1_Products1.style.display = "none";
 // ------------------------------------------
 body.appendChild(main);
 main.appendChild(fast_btn1);
 // --------------------------------------------------------------------------------------------------------------------------------
-fast_btn1.addEventListener('click' , ()=>{
-main.removeChild(sect_1);
-main.appendChild(sect_1_pay);
-main.appendChild(sect_2_pay);
-sect_2_pay.classList.add('sect-2-edit1')
-sect_1_pay.classList.add('sect-1-edit1');
-main.removeChild(sect_2);
-main.removeChild(sect_3);
-sect_2.appendChild(card1);
-sect_2.appendChild(card2);
-main.style.height = '100vh';
-main.style.justifyContent = 'center';
-main.style.flexDirection = 'row';
-main.style.alignItems = 'center';
-// ------------------------------------------------------
+fast_btn1.addEventListener("click", () => {
+  sect_1_pay.style.display = "flex";
+  sect_2_pay.style.display = "flex";
+  sect_1.style.display = "none";
+  sect_1_our.style.display = 'none'
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_2_pay.classList.add("sect-2-edit1");
+  sect_1_pay.classList.add("sect-1-edit1");
+  sect_2.appendChild(card1);
+  sect_2.appendChild(card2);
+  main.style.height = "auto";
+  main.style.flexDirection = "row";
+  main.style.justifyContent = "center";
+  main.style.alignItems = "center";
+  // ------------------------------------------------------
+  sect_2_pay.appendChild(form);
+  form.classList.add("form1");
+  form.appendChild(container_img);
+  container_img.classList.add("container_img");
+  container_img.appendChild(img1_form1);
+  container_img.appendChild(img2_form1);
+  container_img.appendChild(img3_form1);
+  img1_form1.src = "imges/apply pay.png";
+  img2_form1.src = "imges/paypal.png";
+  img3_form1.src = "imges/google-pay.png";
+  container_input.classList.add("container_input");
+  label1.innerHTML = "ادخال البطاقة";
+  label1.style.textAlign = "right";
+  label1.style.width = "100%";
+  label1.htmlFor = "input1";
 
-sect_2_pay.appendChild(form);
-form.classList.add('form1');
-form.appendChild(container_img);
-container_img.classList.add('container_img');
-container_img.appendChild(img1_form1);
-container_img.appendChild(img2_form1);
-container_img.appendChild(img3_form1);
-img1_form1.src = 'imges/apply pay.png';
-img2_form1.src = 'imges/paypal.png';
-img3_form1.src = 'imges/google-pay.png';
-container_input.classList.add('container_input');
-label1.innerHTML = 'ادخال البطاقة';
-label1.style.textAlign = 'right';
-label1.style.width = '100%';
-label1.htmlFor = 'input1';
+  form.appendChild(container_input);
+  container_input.appendChild(input1);
+  container_input.appendChild(label_check);
+  label_check.appendChild(label1);
+  label_check.appendChild(sheckBox);
+  label_check.classList.add("label_check");
+  sheckBox.id = "input1";
+  sheckBox.type = "checkbox";
+  sheckBox.classList.add("sheckBox1");
+  input1.type = "text";
+  input1.placeholder = "ادخل المبلغ";
+  let tow_Element_rel = document.createElement("div");
+  sheckBox.checked = false;
+  tow_Element.appendChild(input1_card);
+  tow_Element.appendChild(tow_Element_rel);
+  tow_Element_rel.appendChild(input1_123);
+  tow_Element_rel.appendChild(input1_history);
+  input1_card.placeholder = "0000 0000 0000 0000";
+  input1_history.placeholder = "yy/mm";
+  input1_123.placeholder = "123";
+  tow_Element_rel.classList.add("tow_Element_rel");
+  tow_Element.classList.add("tow_Element");
+  input1_123.classList.add("input1_123");
+  input1_card.classList.add("input1_card");
+  input1_history.classList.add("input1_history");
+  input1.classList.add("input1");
 
-form.appendChild(container_input);
-container_input.appendChild(input1);
-container_input.appendChild(label_check);
-label_check.appendChild(label1);
-label_check.appendChild(sheckBox);
-label_check.classList.add('label_check');
-sheckBox.id = 'input1';
-sheckBox.type = 'checkbox';
-sheckBox.classList.add('sheckBox1');
-input1.type = 'text';
-input1.placeholder = 'ادخل المبلغ';
-let tow_Element_rel = document.createElement('div');
-sheckBox.checked = false;
-tow_Element.appendChild(input1_card);
-tow_Element.appendChild(tow_Element_rel);
-tow_Element_rel.appendChild(input1_123);
-tow_Element_rel.appendChild(input1_history);
-input1_card.placeholder = '0000 0000 0000 0000';
-input1_history.placeholder = 'yy/mm';
-input1_123.placeholder = '123';
-tow_Element_rel.classList.add('tow_Element_rel');
-tow_Element.classList.add('tow_Element');
-input1_123.classList.add('input1_123');
-input1_card.classList.add('input1_card');
-input1_history.classList.add('input1_history')
-input1.classList.add('input1');
+  sheckBox.addEventListener("click", () => {
+    if (sheckBox.checked == true) {
+      form.appendChild(tow_Element);
+    } else {
+      form.removeChild(tow_Element);
+    }
+  });
 
+  label1.addEventListener("click", () => {
+    if (sheckBox.checked == true) {
+      form.appendChild(tow_Element);
+    } else {
+      form.removeChild(tow_Element);
+    }
+  });
 
-sheckBox.addEventListener('click', () =>{
-
-if(sheckBox.checked == true){
-  form.appendChild(tow_Element);
-
-}else{
-  form.removeChild(input1_card);
-  form.removeChild(tow_Element);
-}
-})
-
-
-
-form.appendChild(btn3)
-btn3.innerHTML = 'تبرع الان';
-})
+  form.appendChild(btn3);
+  btn3.innerHTML = "تبرع الان";
+});
 // --------------------------------------------------------------------------------------------------------------------------------
 fast_btn1.setAttribute("data-aos", "fade-right");
 fast_btn1.innerHTML = "تبرع سريع";
@@ -238,8 +375,8 @@ sect_1.appendChild(hgroup1);
 hgroup1.appendChild(title);
 let i = 0;
 let x = 0;
-let txt = 'تآزرَ';
-let txt1 = 'نتأزر معاً لماء يكفي الجميع';
+let txt = "تآزرَ";
+let txt1 = "نتأزر معاً لماء يكفي الجميع";
 let speed = 160;
 function typeWriter() {
   if (i < txt.length) {
@@ -284,7 +421,8 @@ card2.appendChild(card_title1);
 hgroup4.appendChild(p_card2);
 hgroup4.appendChild(btn_card2);
 title_card2.innerHTML = "أسم المنتج";
-p_card2.innerHTML = "خدماتنا لتحلية المياة في اطار مصنعي هي الافضل من نوعها, نحن نفوز في معادة التكلفة مقابل الاداء";
+p_card2.innerHTML =
+  "خدماتنا لتحلية المياة في اطار مصنعي هي الافضل من نوعها, نحن نفوز في معادة التكلفة مقابل الاداء";
 btn_card2.innerHTML = "المزيد";
 card_title1.innerHTML = "الخدمات المؤسسية";
 card1.setAttribute("data-aos", "fade-up-right");
@@ -309,4 +447,4 @@ sect_3.className = "sect-3";
 body.appendChild(footer);
 footer.appendChild(every);
 
-every.innerHTML = `جميع الحقوق محفوظة © ${date}`
+every.innerHTML = `جميع الحقوق محفوظة © ${date}`;
