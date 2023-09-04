@@ -2,7 +2,8 @@
 
 let body = document.body;
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-let header = document.createElement("header");
+let header = document.createElement('header');
+
 let nav = document.createElement("nav");
 let ul = document.createElement("ul");
 let li1 = document.createElement("li");
@@ -118,7 +119,7 @@ let img4_products1 = document.createElement("img");
 img4_products1.src = "./imges/batl4.jpg";
 let container_products4 = document.createElement("div");
 let h4_products1 = document.createElement("h2");
-h4_products1.innerHTML = "الحياة النفية";
+h4_products1.innerHTML = "الحياة النقية";
 let p4_products1 = document.createElement("p");
 p4_products1.innerHTML = "29.99$";
 let btn4_products1 = document.createElement("button");
@@ -126,13 +127,18 @@ btn4_products1.innerHTML = "اضف الى السلة";
 // ---------------------------------------------------------------------------------------------------------------------------
 body.appendChild(header);
 nav.appendChild(logo);
-logo.innerHTML = "تآزرَ";
+logo.innerHTML = "صفاء";
 logo.addEventListener("click", function () {
+  sect_1_statistics.style.display = 'none';
   main.appendChild(sect_1);
   main.appendChild(sect_2);
   main.appendChild(sect_3);
-  main.removeChild(sect_1_pay);
-  main.removeChild(sect_2_pay);
+  sect_1_our.style.display = "none";
+  sect_1.style.display = "flex";
+  sect_2.style.display = "flex";
+  sect_3.style.display = "flex";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
   sect_2.appendChild(card1);
   sect_2.appendChild(card2);
   main.style.height = "auto";
@@ -140,6 +146,8 @@ logo.addEventListener("click", function () {
   main.style.justifyContent = "auto";
   main.style.flexDirection = "column";
   main.style.alignItems = "auto";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
 });
 logo.setAttribute("data-aos", "fade-right");
 // -----------------------------------
@@ -161,7 +169,7 @@ let h2_hgroup5 = document.createElement("h2");
 h2_hgroup5.innerHTML = "!عنا";
 let p_hgroup5 = document.createElement("p");
 p_hgroup5.innerHTML =
-  "شركة تأزر لتحيلة المياة حي شكرة عريقة نشئت سنة 1939 ومرت شركة تأزر بمرحل عديدة وتطورت ونمت وتوجهت بمنتجاتها وخدماتها نحو الافراد واصبحت الاولى من نوعها اليوم شركة تأزر هي من اكبر واعرق الشركات تحتل الشركة كقيمة سوقية 190 مليار ريال سعودي";
+  "شركة صفاء لتحيلة المياة حي شكرة عريقة نشئت سنة 1939 ومرت شركة صفاء بمرحل عديدة وتطورت ونمت وتوجهت بمنتجاتها وخدماتها نحو الافراد واصبحت الاولى من نوعها اليوم شركة صفاء هي من اكبر واعرق الشركات تحتل الشركة كقيمة سوقية 190 مليار ريال سعودي";
 hgroup5.classList.add("hgroup5");
 sect_1_our.appendChild(hgroup5);
 hgroup5.appendChild(h2_hgroup5);
@@ -197,6 +205,9 @@ let hgroup6 = document.createElement('hgroup');
 let h2_hgroup6 = document.createElement('h2');
 let p_hgroup6 = document.createElement('p');
 let btn6 =document.createElement('button');
+btn6.addEventListener('click' , () =>{
+
+})
 h2_hgroup6.innerHTML = '!التوظيف'; 
 p_hgroup6.innerHTML = 'نهتم بتوظيف الكفاءات والمواهب الرائدة في المجال والتي تطورنا ونطورها'; 
 let img1_todef = document.createElement('img');
@@ -206,6 +217,7 @@ hgroup6.appendChild(h2_hgroup6);
 hgroup6.appendChild(p_hgroup6);
 hgroup6.appendChild(btn6);
 btn6.innerHTML = 'المزيد';
+
 img1_todef.src = './imges/employment.svg';
 img1_todef.style.width = '45%'
 a4.onclick = () => {
@@ -217,7 +229,6 @@ a4.onclick = () => {
   sect_1_pay.style.display = "none";
   sect_2_pay.style.display = "none";
   sect_1_our.style.display ='none';
-  
   sect_1_statistics.style.display = 'flex';
   
 }
@@ -314,21 +325,7 @@ a1.addEventListener("click", function () {
 });
 // -------------
 
-main.appendChild(sect_1);
-main.appendChild(sect_2);
-main.appendChild(sect_3);
-main.appendChild(sect_1_pay);
-main.appendChild(sect_2_pay);
-main.appendChild(sect_1_Products1);
-main.appendChild(sect_2_Products1);
-sect_1.style.display = "flex";
-sect_2.style.display = "flex";
-sect_3.style.display = "flex";
-sect_1_pay.style.display = "none";
-sect_2_pay.style.display = "none";
-sect_1_Products1.style.display = "none";
-sect_1_our.style.display ='none'
-sect_1_statistics.style.display ='none'
+
 // ------------------------------------------
 body.appendChild(main);
 main.appendChild(fast_btn1);
@@ -414,6 +411,7 @@ fast_btn1.addEventListener("click", () => {
   form.appendChild(btn3);
   btn3.innerHTML = "تبرع الان";
 });
+
 // --------------------------------------------------------------------------------------------------------------------------------
 fast_btn1.setAttribute("data-aos", "fade-right");
 fast_btn1.innerHTML = "تبرع سريع";
@@ -446,7 +444,8 @@ hgroup1.appendChild(btn1);
 btn1.innerHTML = "المزيد";
 btn1.setAttribute("data-aos", "fade-up");
 btn1.href = "#sect-3";
-// -----------------------------------
+
+
 img_home1.classList.add("img-div1");
 img_home1.setAttribute("data-aos", "zoom-in");
 // ---------------------------------------------
@@ -543,6 +542,22 @@ btn_card1.addEventListener("click", () => {
   form.appendChild(btn3);
   btn3.innerHTML = "تبرع الان";
 });
+main.appendChild(sect_1);
+main.appendChild(sect_2);
+main.appendChild(sect_3);
+main.appendChild(sect_1_pay);
+main.appendChild(sect_2_pay);
+main.appendChild(sect_1_Products1);
+main.appendChild(sect_2_Products1);
+sect_1.style.display = "flex";
+sect_2.style.display = "flex";
+sect_3.style.display = "flex";
+sect_1_pay.style.display = "none";
+sect_2_pay.style.display = "none";
+sect_1_Products1.style.display = "none";
+sect_1_our.style.display ='none'
+sect_1_statistics.style.display ='none'
+// -----------------------------------
 // ----------------------------------------------------------------------------------------
 sect_1_pay.style.display = "flex";
 sect_2_pay.style.display = "flex";
@@ -560,6 +575,7 @@ main.style.height = "auto";
 main.style.flexDirection = "row";
 main.style.justifyContent = "center";
 main.style.alignItems = "center";
+
 // ------------------------------------------------------
 sect_2_pay.appendChild(form);
 form.classList.add("form1");
@@ -614,9 +630,9 @@ sheckBox.addEventListener("click", () => {
 
 label1.addEventListener("click", () => {
   if (sheckBox.checked == true) {
-    form.appendChild(tow_Element);
+    tow_Element.style.display = 'flex';
   } else {
-    form.removeChild(tow_Element);
+    tow_Element.style.display = 'none'
   }
 });
 
@@ -631,8 +647,7 @@ card2.appendChild(card_title1);
 hgroup4.appendChild(p_card2);
 hgroup4.appendChild(btn_card2);
 title_card2.innerHTML = "أسم المنتج";
-p_card2.innerHTML =
-  "منتجاتنا لتحلية المياة هي الافضل من نوعها, نحن نفوز في معادة التكلفة مقابل الاداء";
+p_card2.innerHTML ="منتجاتنا لتحلية المياة هي الافضل من نوعها, نحن نفوز في معادة التكلفة مقابل الاداء";
 btn_card2.innerHTML = "المزيد";
 // ----------------------------------------------------------------------------------------
 btn_card2.addEventListener("click", () => {

@@ -447,7 +447,7 @@ form button:hover {
     position: relative;
     color: white;
     bottom: 8%;
-    right: 4%;
+    right: 2.6%;
     border-radius: 100px;
     padding: 10px;
     border: aliceblue 3px solid;
@@ -468,16 +468,19 @@ form button:hover {
     display: flex;
     flex-direction: column;
     width: 20%;
-    height: 60vh;
+    height: 55vh;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    border: #004b23 1px solid;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .cards_Products1 div {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    height:50%;
+    height:60%;
     width: 100%;
     gap: 5%;
     display: flex;
