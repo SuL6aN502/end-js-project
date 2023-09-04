@@ -525,6 +525,83 @@ form button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}.sect_1_our img{
-    width: 50%;
+    gap: 5%;
+}
+.sect_1_our img{
+    width: 45%;
+    animation: moveing 4s infinite;
+
+}
+.hgroup5{
+    width: 45%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hgroup5 h2{
+font-size: 5rem;
+}
+.hgroup5 p{
+width: 70%;
+font-size: 1.2rem;
+}
+/* ----------------------------------------------------------------- */
+.sect_1_statistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+}
+.sect_1_statistics img{
+
+animation: moveing 4s infinite;
+}
+@keyframes moveing {
+    0%{transform: translate(0,0);}
+    50%{transform: translate(0,-5px);}
+    100%{transform: translate(0,);}
+    
+}
+.sect_1_statistics hgroup{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.sect_1_statistics hgroup{
+    width: 45%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sect_1_statistics hgroup h2{
+font-size: 4rem;
+}
+.sect_1_statistics hgroup p{
+width: 70%;
+font-size: 1.2rem;
+}
+.sect_1_statistics hgroup button{
+    height: 7vh;
+    width: 20%;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #80ED99;
+}
+.sect_1_statistics hgroup button:hover {
+    background: #14746F;
+    color: aliceblue;
+    transform: translate(0,-10px);
 }
