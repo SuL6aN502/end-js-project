@@ -363,7 +363,7 @@ form button:hover {
 
 /* ------------------------------------------------- */
 .tow_Element {
-    display: flex;
+    bottom: 40%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -380,6 +380,7 @@ form button:hover {
     align-items: center;
     gap: 10%;
     height: 30%;
+    margin: 20px 0 0 0 ;
 }
 
 .tow_Element input,
@@ -443,20 +444,25 @@ form button:hover {
 }
 
 .sect_1_Products1 i {
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     color: white;
-    bottom: 8%;
+    bottom: 9.5%;
     right: 2.6%;
     border-radius: 100px;
     padding: 10px;
     border: aliceblue 3px solid;
     cursor: pointer;
+    transition: 0.5s;
 }
+.sect_1_Products1 i:hover{
+    color: #004b23;
+    border: #004b23 3px solid;
 
+}
 .sect_2_Products1 {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -529,11 +535,11 @@ form button:hover {
     justify-content: center;
     align-items: center;
     gap: 5%;
+
 }
 .sect_1_our img{
     width: 45%;
     animation: moveing 4s infinite;
-
 }
 .hgroup5{
     width: 45%;
@@ -545,10 +551,16 @@ form button:hover {
 }
 .hgroup5 h2{
 font-size: 5rem;
+background-image: linear-gradient(90deg, #22577A, #80ED99);
+-webkit-background-clip: text;
+color: transparent;
 }
 .hgroup5 p{
-width: 70%;
-font-size: 1.2rem;
+width: 75%;
+font-size: 1.29rem;
+background-image: linear-gradient(90deg, #22577A, #80ED99);
+-webkit-background-clip: text;
+color: transparent;
 }
 /* ----------------------------------------------------------------- */
 .sect_1_statistics{
@@ -576,6 +588,9 @@ animation: moveing 4s infinite;
     align-items: center;
     justify-content: center;
     gap: 5%;
+    background-image: linear-gradient(90deg, #22577A, #80ED99);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .sect_1_statistics hgroup{
     width: 45%;
@@ -607,4 +622,121 @@ font-size: 1.2rem;
     background: #14746F;
     color: aliceblue;
     transform: translate(0,-10px);
+}
+/* ---------------------------------------------------------*/
+.sect_1_accont{
+    width: 60%;
+    height: 100vh;
+    background: url(../content/imges/login.svg) no-repeat center;
+}
+.sect_2_accont{
+width: 40%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.tap1{
+    width: 70%;
+    height: 6%;
+    background-color: #036666;
+    display: flex;
+    align-items: end;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.tap1 button{
+width: 50%;
+height: 100%;
+cursor: pointer;
+color: aliceblue;
+border-bottom: #78C6A3 1px solid;
+}
+.btn_tap1{
+    border-top-left-radius: 20px;
+    border:none;
+    border-top: #78C6A3 5px solid;
+    background-color: #004b23;
+}
+.btn_tap2{
+    border-top-right-radius: 20px;
+    border:none;
+    border-top: #78c6a3 5px solid;
+    background-color: #004b2353;
+}
+.sect_2_accont form{
+display: flex;
+width: 70%;
+height: 60vh;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #036666;
+gap: 10%;
+transition: 0.5s;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.btn7{
+    width: 50%;
+    color: aliceblue;
+    background-color: #004b23;
+}
+.btn7:hover{
+background-color: aliceblue;
+color: #222;
+}
+.sect_2_accont form h2{
+color: aliceblue;
+}
+.sect_2_accont form input{
+width: 50%;
+height: 10%;
+text-align: right;
+background: none;
+border: none;
+border-bottom: #004b23 2px solid;
+transition: 0.5s;
+color: aliceblue;
+}
+.sect_2_accont form input:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sect_2_accont form input:focus{
+outline: none;
+}
+.sect_2_accont form input::placeholder{
+text-align: right;
+padding:  0 5px 0 0;
+color: 
+aliceblue;
+}
+/* ------------------------------------------------------------------ */
+.sect_1_more{
+    width: 100%;
+    height: 200vh;
+    gap: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(../content/imges/pp.png) center;
+    background-size: cover;
+    flex-direction: row;
+    background-color: #004B23;
+}
+.sect_1_more hgroup{
+    width: 30%;
+    height: 25%;
+    text-align: right;
+    margin: 0 100px 0 0;
+    backdrop-filter: blur(2px);
+}
+.sect_1_more hgroup h2{
+    filter: invert(100%);
+}
+.sect_1_more hgroup p{
+    filter: invert(100%);
+
 }

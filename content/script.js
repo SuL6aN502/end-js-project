@@ -148,6 +148,8 @@ logo.addEventListener("click", function () {
   main.style.alignItems = "auto";
   sect_1_Products1.style.display = "none";
   sect_2_Products1.style.display = "none";
+  sect_1_more.style.display = 'none';
+
 });
 logo.setAttribute("data-aos", "fade-right");
 // -----------------------------------
@@ -168,13 +170,15 @@ let hgroup5 = document.createElement("hgroup");
 let h2_hgroup5 = document.createElement("h2");
 h2_hgroup5.innerHTML = "!عنا";
 let p_hgroup5 = document.createElement("p");
-p_hgroup5.innerHTML =
-  "شركة صفاء لتحيلة المياة حي شكرة عريقة نشئت سنة 1939 ومرت شركة صفاء بمرحل عديدة وتطورت ونمت وتوجهت بمنتجاتها وخدماتها نحو الافراد واصبحت الاولى من نوعها اليوم شركة صفاء هي من اكبر واعرق الشركات تحتل الشركة كقيمة سوقية 190 مليار ريال سعودي";
+p_hgroup5.innerHTML = "شركة صفاء لتحيلة المياة حي شكرة عريقة نشئت سنة 1939 ومرت شركة صفاء بمرحل عديدة وتطورت ونمت وتوجهت بمنتجاتها وخدماتها نحو الافراد واصبحت الاولى من نوعها اليوم شركة صفاء هي من اكبر واعرق الشركات تحتل الشركة كقيمة سوقية 190 مليار ريال سعودي";
 hgroup5.classList.add("hgroup5");
 sect_1_our.appendChild(hgroup5);
 hgroup5.appendChild(h2_hgroup5);
 hgroup5.appendChild(p_hgroup5);
 a3.onclick = () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   sect_1.style.display = "none";
   sect_2.style.display = "none";
   sect_3.style.display = "none";
@@ -205,9 +209,21 @@ let hgroup6 = document.createElement('hgroup');
 let h2_hgroup6 = document.createElement('h2');
 let p_hgroup6 = document.createElement('p');
 let btn6 =document.createElement('button');
-btn6.addEventListener('click' , () =>{
 
-})
+
+
+// btn6.addEventListener('click' , () =>{
+//   sect_1.style.display = "none";
+//   sect_2.style.display = "none";
+//   sect_3.style.display = "none";
+//   sect_1_Products1.style.display = "none";
+//   sect_2_Products1.style.display = "none";
+//   sect_1_pay.style.display = "none";
+//   sect_2_pay.style.display = "none";
+//   sect_1_our.style.display ='none';
+
+
+// })
 h2_hgroup6.innerHTML = '!التوظيف'; 
 p_hgroup6.innerHTML = 'نهتم بتوظيف الكفاءات والمواهب الرائدة في المجال والتي تطورنا ونطورها'; 
 let img1_todef = document.createElement('img');
@@ -218,9 +234,70 @@ hgroup6.appendChild(p_hgroup6);
 hgroup6.appendChild(btn6);
 btn6.innerHTML = 'المزيد';
 
+
+
+// --------------------------------------------------------------------------------------------------------------------------------
+let sect_1_more = document.createElement('section');
+sect_1_more.classList.add('sect_1_more');
+let hgr_1 = document.createElement('hgroup');
+let hgr_2 = document.createElement('hgroup');
+let hgr_3 = document.createElement('hgroup');
+let h2_hgr1 = document.createElement('h2');
+let h2_hgr2 = document.createElement('h2');
+let h2_hgr3 = document.createElement('h2');
+let p_hgr1 = document.createElement('p');
+let p_hgr2 = document.createElement('p');
+let p_hgr3 = document.createElement('p');
+h2_hgr1.innerHTML = 'المؤهلات الأكاديمية';
+h2_hgr2.innerHTML = 'المهارات الأساسية';
+h2_hgr3.innerHTML = 'التواصل';
+p_hgr1.innerHTML = 'المؤهلات الأكاديمية: المهندسين: درجة البكالوريوس في الهندسة الكيميائية أو الهندسة الميكانيكية أو الهندسة البيئية أو ما يعادلها. يفضل أن يكون لديهم درجة الماجستير في مجال ذي صلة. الفنيين: درجة الدبلوم أو البكالوريوس في الكيمياء أو الفيزياء أو الهندسة أو ما يعادلها. الإدارة والمبيعات: درجة البكالوريوس في إدارة الأعمال أو التسويق أو مجال ذي صلة. الخبرة العملية: يفضل أن يكون للمتقدمين خبرة عمل سابقة في مجال تحلية المياه أو الصناعات الكيميائية أو الصناعات البترولية. يجب أن يكون لديهم القدرة على العمل في بيئة فريقية وعبر الأقسام المتعددة.';
+p_hgr2.innerHTML = 'المهارات التقنية: معرفة جيدة بمعدات وأنظمة تحلية المياه. القدرة على قراءة وفهم الرسومات التقنية والمخططات. المهارات الإدارية: القدرة على التخطيط وتنظيم العمليات اليومية. القدرة على إدارة الموظفين والتنسيق مع الأقسام الأخرى. المهارات الشخصية: مهارات التواصل الجيدة، لفهم وتوصيل المعلومات بشكل فعال. القدرة على حل المشاكل واتخاذ القرارات بشكل مستقل. اللغات: القدرة على التواصل باللغة العربية بشكل فعال، سواء كتابياً أو شفوياً. القدرة على التواصل باللغة الانقليزية هي ميزة إضافية.';
+p_hgr3.innerHTML = 'تستطيع التقديم على الشركة من خلال الارسال السيرة الذاتية وجمييع التفاصيل مثل  في الايميل الاتي Gbj6420@gmail.com';
+sect_1_more.appendChild(hgr_1);
+sect_1_more.appendChild(hgr_2);
+sect_1_more.appendChild(hgr_3);
+hgr_1.appendChild(h2_hgr1)
+hgr_1.appendChild(p_hgr1)
+hgr_2.appendChild(h2_hgr2)
+hgr_2.appendChild(p_hgr2)
+hgr_3.appendChild(h2_hgr3)
+hgr_3.appendChild(p_hgr3)
+
+
+
+
+
+
+
+
+
+main.appendChild(sect_1_more);
+sect_1_more.style.display = 'none';
+
+btn6.addEventListener('click', () =>{
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  sect_1_our.style.display ='none';
+  sect_1_statistics.style.display = 'none';
+  sect_1_more.style.display = 'flex';
+  
+});
+
 img1_todef.src = './imges/employment.svg';
 img1_todef.style.width = '45%'
 a4.onclick = () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   sect_1.style.display = "none";
   sect_2.style.display = "none";
   sect_3.style.display = "none";
@@ -232,14 +309,119 @@ a4.onclick = () => {
   sect_1_statistics.style.display = 'flex';
   
 }
-// -------------------------Products-------------------------
 
+// -------------------------Products-------------------------
 accont.className = "fa-solid fa-user";
 basket.className = "fa-solid fa-basket-shopping";
 ul.appendChild(li2);
 li2.appendChild(a2);
 
+let sect_1_accont = document.createElement('section');
+let sect_2_accont = document.createElement('section');
+let tap1 = document.createElement('div');
+tap1.classList.add('tap1')
+let btn_tap1 = document.createElement('button');
+let btn_tap2 = document.createElement('button');
+btn_tap1.classList.add('btn_tap1');
+btn_tap2.classList.add('btn_tap2');
+tap1.appendChild(btn_tap1)
+btn_tap1.innerHTML = 'تسجيل الدخول'
+tap1.appendChild(btn_tap2)
+btn_tap2.innerHTML = 'انشاء حساب'
+let input_sign_up = document.createElement('input');
+let input_sign_up2 = document.createElement('input');
+input_sign_up.type = 'text'
+input_sign_up2.type = 'text'
+
+let form1 = document.createElement('form');
+let h2_login = document.createElement('h2');
+h2_login.innerHTML = 'مرحباً بعودتك';
+form1.appendChild(h2_login);
+let input_login1 = document.createElement('input');
+let input_login2 = document.createElement('input');
+let btn7 = document.createElement('button');
+btn7.innerHTML = 'دخول';
+btn7.classList.add('btn7');
+sect_2_accont.appendChild(tap1);
+sect_2_accont.appendChild(form1);
+form1.appendChild(input_login1);
+input_login1.placeholder = 'اسم المستخدم';
+input_login1.type = 'text';
+form1.appendChild(input_login2);
+input_login2.type = 'password';
+input_login2.placeholder = 'كلمة المرور';
+form1.appendChild(btn7);
+form1.appendChild(input_sign_up);
+form1.appendChild(input_sign_up2);
+form1.appendChild(input_login1);
+form1.appendChild(input_login2);
+form1.appendChild(btn7)
+
+input_login1.style.display ='block';
+input_login2.style.display ='block';
+input_sign_up.style.display ='none';
+input_sign_up2.style.display ='none';
+btn7.style.display ='block'; 
+// -------------------------------------------------------------------------------------------------
+btn_tap2.onclick = () => {
+  sect_1_more.style.display = 'none';
+  btn_tap1.style.background = '#004b2353';
+  btn_tap2.style.background = '#004b23';
+  h2_login.innerHTML = '!مرحباً بك';
+  btn7.innerHTML = 'انشاء'
+  input_login1.style.display ='block';
+  input_login2.style.display ='block';
+  input_sign_up.style.display ='block';
+  input_sign_up.placeholder = 'الاسم الاول'
+  input_sign_up2.style.display ='block';
+  input_sign_up2.placeholder = 'الاسم الاخير'
+  btn7.style.display ='block';  
+  form1.style.height = '70vh'
+  form1.style.gap = '5%'
+}
+btn_tap1.onclick = () => {
+  sect_1_more.style.display = 'none';
+  btn7.innerHTML = 'دخول'
+  h2_login.innerHTML = 'مرحباً بعوتك';
+  btn_tap2.style.background = '#004b2353';
+  btn_tap1.style.background = '#004b23';
+  form1.style.height = '60vh';
+  input_login1.style.display ='block';
+  input_login2.style.display ='block';
+  input_sign_up.style.display ='none';
+  input_sign_up2.style.ddisplay ='none';
+  btn7.style.display ='block'; 
+  form1.style.gap = '10%'
+}
+// -------------------------------------------------------------------------------------------------
+input_login1.classList.add('input_login1')
+input_login2.classList.add('input_login2')
+main.appendChild(sect_1_accont);
+sect_1_accont.classList.add('sect_1_accont');
+main.appendChild(sect_2_accont);
+sect_2_accont.classList.add('sect_2_accont');
+
+
+accont.addEventListener('click',()=>{
+sect_1_more.style.display = 'none';
+sect_1.style.display ='none';
+sect_2.style.display ='none';
+sect_3.style.display ='none';
+sect_1_Products1.style.display ='none';
+sect_2_Products1.style.display ='none';
+sect_2_pay.style.display ='none';
+sect_1_pay.style.display ='none';
+sect_1_our.style.display = 'none';
+sect_1_statistics.style.display = 'none';
+sect_2_accont.style.display = 'flex';
+sect_1_accont.style.display =' flex';
+main.style.flexDirection = 'row';
+})
+
 a2.addEventListener("click", () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   sect_1_statistics.style.display = 'none';
   sect_1_Products1.style.display = "flex";
   main.style.flexDirection = "column";
@@ -296,6 +478,8 @@ a2.addEventListener("click", () => {
   sect_1_pay.style.display = "none";
   sect_2_pay.style.display = "none";
 });
+
+
 // -----------------------------------------------------------------------
 ul.appendChild(li1);
 li1.appendChild(a1);
@@ -303,6 +487,7 @@ a1.href = "#";
 a1.innerHTML = "الصفحة الرئيسية";
 a1.classList.add("finish-border");
 a1.addEventListener("click", function () {
+  sect_1_more.style.display = 'none';
   sect_1_statistics.style.display = 'none';
   main.appendChild(sect_1);
   main.appendChild(sect_2);
@@ -322,6 +507,9 @@ a1.addEventListener("click", function () {
   main.style.alignItems = "auto";
   sect_1_Products1.style.display = "none";
   sect_2_Products1.style.display = "none";
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+
 });
 // -------------
 
@@ -331,6 +519,9 @@ body.appendChild(main);
 main.appendChild(fast_btn1);
 // --------------------------------------------------------------------------------------------------------------------------------
 fast_btn1.addEventListener("click", () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   sect_1_statistics.style.display = 'none';
   sect_1_pay.style.display = "flex";
   sect_2_pay.style.display = "flex";
@@ -394,17 +585,17 @@ fast_btn1.addEventListener("click", () => {
 
   sheckBox.addEventListener("click", () => {
     if (sheckBox.checked == true) {
-      form.appendChild(tow_Element);
+      tow_Element.style.display = 'block'
     } else {
-      form.removeChild(tow_Element);
+      tow_Element.style.display = 'none'
     }
   });
 
   label1.addEventListener("click", () => {
     if (sheckBox.checked == true) {
-      form.appendChild(tow_Element);
+      tow_Element.style.display = 'block'
     } else {
-      form.removeChild(tow_Element);
+      tow_Element.style.display = 'none'
     }
   });
 
@@ -421,8 +612,8 @@ sect_1.appendChild(hgroup1);
 hgroup1.appendChild(title);
 let i = 0;
 let x = 0;
-let txt = "تآزرَ";
-let txt1 = "نتأزر معاً لماء يكفي الجميع";
+let txt = "صفاء";
+let txt1 = "لماء صافي يكفي الجميع";
 let speed = 160;
 function typeWriter() {
   if (i < txt.length) {
@@ -444,8 +635,6 @@ hgroup1.appendChild(btn1);
 btn1.innerHTML = "المزيد";
 btn1.setAttribute("data-aos", "fade-up");
 btn1.href = "#sect-3";
-
-
 img_home1.classList.add("img-div1");
 img_home1.setAttribute("data-aos", "zoom-in");
 // ---------------------------------------------
@@ -462,6 +651,7 @@ p_card1.innerHTML = "نقدم حلول مستدامة واكثر فائدة وق
 // ----------------------------------------------------------------------------------------
 btn_card1.innerHTML = "تبرع";
 btn_card1.addEventListener("click", () => {
+  sect_1_more.style.display = 'none';
   sect_1_statistics.style.display = 'none';
   sect_1_pay.style.display = "flex";
   sect_2_pay.style.display = "flex";
@@ -479,6 +669,8 @@ btn_card1.addEventListener("click", () => {
   main.style.flexDirection = "row";
   main.style.justifyContent = "center";
   main.style.alignItems = "center";
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   // ------------------------------------------------------
   sect_2_pay.appendChild(form);
   form.classList.add("form1");
@@ -542,6 +734,7 @@ btn_card1.addEventListener("click", () => {
   form.appendChild(btn3);
   btn3.innerHTML = "تبرع الان";
 });
+// ----------------------------------------------------------------------------------
 main.appendChild(sect_1);
 main.appendChild(sect_2);
 main.appendChild(sect_3);
@@ -557,22 +750,19 @@ sect_2_pay.style.display = "none";
 sect_1_Products1.style.display = "none";
 sect_1_our.style.display ='none'
 sect_1_statistics.style.display ='none'
-// -----------------------------------
-// ----------------------------------------------------------------------------------------
-sect_1_pay.style.display = "flex";
-sect_2_pay.style.display = "flex";
-sect_1.style.display = "none";
+sect_1_accont.style.display = 'none'
+sect_2_accont.style.display = 'none'
 sect_1_our.style.display = "none";
-sect_2.style.display = "none";
-sect_3.style.display = "none";
 sect_1_Products1.style.display = "none";
 sect_2_Products1.style.display = "none";
 sect_2_pay.classList.add("sect-2-edit1");
 sect_1_pay.classList.add("sect-1-edit1");
+// ----------------------------------------------------------------------------------------
+
 sect_2.appendChild(card1);
 sect_2.appendChild(card2);
 main.style.height = "auto";
-main.style.flexDirection = "row";
+// main.style.flexDirection = "row";
 main.style.justifyContent = "center";
 main.style.alignItems = "center";
 
@@ -651,6 +841,9 @@ p_card2.innerHTML ="منتجاتنا لتحلية المياة هي الافضل
 btn_card2.innerHTML = "المزيد";
 // ----------------------------------------------------------------------------------------
 btn_card2.addEventListener("click", () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
   sect_1_statistics.style.display = 'none';
   sect_1_Products1.style.display = "flex";
   main.style.flexDirection = "column";
