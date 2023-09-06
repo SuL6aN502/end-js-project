@@ -93,6 +93,9 @@ footer{
 .borger_meno{
     display: none;
 }
+.borger_meno_1{
+    display: none;
+}
 @media (max-width:1050px){
     header>nav>ul{
     display: none;

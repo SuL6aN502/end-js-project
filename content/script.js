@@ -160,6 +160,20 @@ ul.appendChild(li3);
 li3.appendChild(a3);
 a3.href = "#";
 a3.innerHTML = "من نحن";
+a3.onclick = () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  sect_1_our.style.display ='none';
+  sect_1_statistics.style.display = 'flex';
+}
 let sect_1_our = document.createElement("section");
 sect_1_our.classList.add("sect_1_our");
 let img1_our = document.createElement("img");
