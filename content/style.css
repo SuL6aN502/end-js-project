@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lemonada', cursive;
 }
-
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -53,7 +51,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 .sect-1 {
     width: 100%;
     height: 100vh;
@@ -62,7 +59,6 @@ main {
     justify-content: center;
     transition: 0.4s;
 }
-
 .sect-1 img {
     z-index: -1;
 }
@@ -272,6 +268,8 @@ main {
     transition: 0.3s;
 }
 
+
+
 .form1:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -363,7 +361,6 @@ form button:hover {
 
 /* ------------------------------------------------- */
 .tow_Element {
-    bottom: 40%;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -651,7 +648,6 @@ width: 50%;
 height: 100%;
 cursor: pointer;
 color: aliceblue;
-border-bottom: #78C6A3 1px solid;
 }
 .btn_tap1{
     border-top-left-radius: 20px;
@@ -739,4 +735,124 @@ aliceblue;
 .sect_1_more hgroup p{
     filter: invert(100%);
 
+}
+.display{
+    display: none;
+}
+@media (max-width:1050px){
+.sect-1 h1 {
+    width: 70%;
+}
+body{
+    overflow-x: hidden;
+}
+.fast-btn1 {
+width: 30%;
+
+}
+.sect-1 a {
+width: 50%;
+}
+.sect-2{
+    flex-direction: column;
+    height:140vh;
+    justify-content: space-around;
+    gap: 0;
+}
+.sect-2 div{
+height: 45%;
+width: 95%;
+}
+.sect-3 .img-sect3 {
+
+display: none;
+}
+.sect-3>hgroup {
+width: 95%;
+}
+.sect-1-edit1{
+display: none;
+background-image: none;
+width: 0;
+height: 0;
+}
+main{
+    width: 100%;
+}
+.sect-2-edit1{
+width: 100vw;
+gap: 0;
+}
+.sect-2-edit1{
+
+} 
+.sect-2-edit1 form{
+width:95%;
+
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+.tow_Element {
+width: 76%;
+}
+.sect_2_Products1{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 270vh;
+}
+.cards_Products1{
+    width: 95%;
+}
+.sect_1_accont{
+    display: none;
+    width: 0;
+}
+.sect_2_accont{
+    width: 100%;
+    height: 110vh;
+}
+.sect_2_accont form{
+width: 95%;
+}
+.tap1{
+    width: 95%;
+}
+.sect_1_statistics img{
+    display: none;
+
+}
+.sect_1_statistics hgroup{
+width: 95%;
+}
+.sect_1_statistics hgroup button{
+width: 40%;
+}
+.sect_1_more{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.sect_1_more hgroup{
+width: 90%;
+margin: 29px 0 0 0;
+}
+.sect_1_our img{
+    display: none;
+}
+.sect_1_our hgroup{
+width: 100%;
+}
+.sect_1_our hgroup p{
+width: 90%;
+}
+.sect_1_our{
+    width: 100%;
+}
 }

@@ -149,7 +149,6 @@ logo.addEventListener("click", function () {
   sect_1_Products1.style.display = "none";
   sect_2_Products1.style.display = "none";
   sect_1_more.style.display = 'none';
-
 });
 logo.setAttribute("data-aos", "fade-right");
 // -----------------------------------
@@ -175,22 +174,7 @@ hgroup5.classList.add("hgroup5");
 sect_1_our.appendChild(hgroup5);
 hgroup5.appendChild(h2_hgroup5);
 hgroup5.appendChild(p_hgroup5);
-a3.onclick = () => {
-  sect_1_more.style.display = 'none';
-  sect_1_accont.style.display = 'none'
-  sect_2_accont.style.display = 'none'
-  sect_1.style.display = "none";
-  sect_2.style.display = "none";
-  sect_3.style.display = "none";
-  sect_1_Products1.style.display = "none";
-  sect_2_Products1.style.display = "none";
-  sect_1_pay.style.display = "none";
-  sect_2_pay.style.display = "none";
-  // --------------------------------------------------
-  main.appendChild(sect_1_our);
-  sect_1_our.style.display = "flex";
-  sect_1_statistics.style.display = 'none';
-};
+
 // ---------------------
 for(let i =0 ; i <= 10 ; i++){
   console.log(i);
@@ -382,14 +366,14 @@ btn_tap2.onclick = () => {
 btn_tap1.onclick = () => {
   sect_1_more.style.display = 'none';
   btn7.innerHTML = 'دخول'
-  h2_login.innerHTML = 'مرحباً بعوتك';
+  h2_login.innerHTML = 'مرحباً بعودتك';
   btn_tap2.style.background = '#004b2353';
   btn_tap1.style.background = '#004b23';
   form1.style.height = '60vh';
   input_login1.style.display ='block';
   input_login2.style.display ='block';
   input_sign_up.style.display ='none';
-  input_sign_up2.style.ddisplay ='none';
+  input_sign_up2.style.display ='none';
   btn7.style.display ='block'; 
   form1.style.gap = '10%'
 }
@@ -624,7 +608,7 @@ function typeWriter() {
   if (x < txt1.length) {
     p1.innerHTML += txt1.charAt(x);
     x++;
-    setTimeout(typeWriter, 400);
+    setTimeout(typeWriter, 200);
   }
 }
 typeWriter();
@@ -634,13 +618,14 @@ p1.setAttribute("data-aos", "fade-left");
 hgroup1.appendChild(btn1);
 btn1.innerHTML = "المزيد";
 btn1.setAttribute("data-aos", "fade-up");
-btn1.href = "#sect-3";
+btn1.href = "#sect-2";
 img_home1.classList.add("img-div1");
 img_home1.setAttribute("data-aos", "zoom-in");
 // ---------------------------------------------
 
 // --------------------------------------------------
 main.appendChild(sect_2);
+sect_2.id = 'sect-2'
 sect_2.appendChild(card1);
 card1.appendChild(hgroup2);
 card1.appendChild(card_title);
@@ -926,3 +911,169 @@ body.appendChild(footer);
 footer.appendChild(every);
 
 every.innerHTML = `جميع الحقوق محفوظة © ${date}`;
+if(body.style.width >= '450px'){
+  sect_1_pay.style.display = 'none'
+  
+}
+let borger_meno = document.createElement('div');
+let span1 = document.createElement('span');
+let span2 = document.createElement('span');
+let span3 = document.createElement('span');
+nav.appendChild(borger_meno);
+borger_meno.classList.add('borger_meno')
+span1.classList.add('span');
+span2.classList.add('span');
+span3.classList.add('span');
+let borger_meno_1 = document.createElement('div');
+let ul_1 =document.createElement('ul');
+// ======================
+let li_1 =document.createElement('li');
+li_1.addEventListener("click", function () {
+  sect_1_more.style.display = 'none';
+  sect_1_statistics.style.display = 'none';
+  main.appendChild(sect_1);
+  main.appendChild(sect_2);
+  main.appendChild(sect_3);
+  sect_1_our.style.display = "none";
+  sect_1.style.display = "flex";
+  sect_2.style.display = "flex";
+  sect_3.style.display = "flex";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  sect_2.appendChild(card1);
+  sect_2.appendChild(card2);
+  main.style.height = "auto";
+  main.style.flexDirection = "column";
+  main.style.justifyContent = "auto";
+  main.style.flexDirection = "column";
+  main.style.alignItems = "auto";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+
+});
+let li_2 =document.createElement('li');
+li_2.addEventListener("click", () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+  sect_1_statistics.style.display = 'none';
+  sect_1_Products1.style.display = "flex";
+  main.style.flexDirection = "column";
+  sect_1_our.style.display = "none";
+  sect_1_Products1.appendChild(accont);
+  sect_1_Products1.appendChild(basket);
+  sect_2_Products1.style.display = "flex";
+  sect_1_Products1.classList.add("sect_1_Products1");
+  sect_2_Products1.classList.add("sect_2_Products1");
+  // --------------------------------
+  sect_2_Products1.appendChild(card_Products1);
+  card_Products1.appendChild(img1_products1);
+  card_Products1.appendChild(container_products);
+  container_products.className = "container_products";
+
+  container_products.appendChild(h1_products1);
+  container_products.appendChild(p1_products1);
+  container_products.appendChild(btn1_products1);
+  // -----------------------------------------------
+  sect_2_Products1.appendChild(card_Products2);
+  card_Products2.appendChild(img2_products1);
+  card_Products2.appendChild(container_products2);
+  container_products2.className = "container_products";
+
+  container_products2.appendChild(h2_products1);
+  container_products2.appendChild(p2_products1);
+  container_products2.appendChild(btn2_products1);
+  // -----------------------------------------------------------
+  sect_2_Products1.appendChild(card_Products3);
+  card_Products3.appendChild(img3_products1);
+  card_Products3.appendChild(container_products3);
+  container_products3.className = "container_products";
+
+  container_products3.appendChild(h3_products1);
+  container_products3.appendChild(p3_products1);
+  container_products3.appendChild(btn3_products1);
+  // -----------------------------------------------------------
+  sect_2_Products1.appendChild(card_Products4);
+  card_Products4.appendChild(img4_products1);
+  card_Products4.appendChild(container_products4);
+  container_products4.className = "container_products";
+
+  container_products4.appendChild(h4_products1);
+  container_products4.appendChild(p4_products1);
+  container_products4.appendChild(btn4_products1);
+  // --------------------------------
+  card_Products1.classList.add("cards_Products1");
+  card_Products2.classList.add("cards_Products1");
+  card_Products3.classList.add("cards_Products1");
+  card_Products4.classList.add("cards_Products1");
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+});
+let li_3 =document.createElement('li');
+li_3.onclick = () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  sect_1_our.style.display ='none';
+  sect_1_statistics.style.display = 'flex';
+}
+let li_4 =document.createElement('li');
+li_4.onclick = () => {
+  sect_1_more.style.display = 'none';
+  sect_1_accont.style.display = 'none'
+  sect_2_accont.style.display = 'none'
+  sect_1.style.display = "none";
+  sect_2.style.display = "none";
+  sect_3.style.display = "none";
+  sect_1_Products1.style.display = "none";
+  sect_2_Products1.style.display = "none";
+  sect_1_pay.style.display = "none";
+  sect_2_pay.style.display = "none";
+  // --------------------------------------------------
+  main.appendChild(sect_1_our);
+  sect_1_our.style.display = "flex";
+  sect_1_statistics.style.display = 'none';
+};
+li_1.innerHTML = 'الصفحة الرئيسية';
+li_2.innerHTML = 'المنتاجات';
+li_3.innerHTML = 'التوظيف';
+li_4.innerHTML = 'من نحن';
+ul_1.appendChild(li_1);
+ul_1.appendChild(li_2);
+ul_1.appendChild(li_3);
+ul_1.appendChild(li_4);
+borger_meno_1.appendChild(ul_1);
+borger_meno_1.classList.add('borger_meno_1')
+borger_meno.appendChild(span1);
+borger_meno.appendChild(span2);
+borger_meno.appendChild(span3);
+main.appendChild(borger_meno_1);
+borger_meno.onclick = () => {
+  borger_meno_1.style.width = '100%';
+  ul_1.style.display = 'block';
+  ul_1.className = 'ul_1';
+  li_1.style.display = 'block';
+  li_2.style.display = 'block';
+  li_3.style.display = 'block';
+  li_4.style.display = 'block';
+}
+borger_meno_1.addEventListener('click' , () => {
+  borger_meno_1.style.width = '0%';
+  ul_1.style.display = 'none'
+  li_1.style.display = 'none'
+  li_2.style.display = 'none'
+  li_3.style.display = 'none'
+  li_4.style.display = 'none'
+})
