@@ -171,8 +171,10 @@ a3.onclick = () => {
   sect_2_Products1.style.display = "none";
   sect_1_pay.style.display = "none";
   sect_2_pay.style.display = "none";
-  sect_1_our.style.display ='none';
-  sect_1_statistics.style.display = 'flex';
+  // --------------------------------------------------
+  main.appendChild(sect_1_our);
+  sect_1_our.style.display = "flex";
+  sect_1_statistics.style.display = 'none';
 }
 let sect_1_our = document.createElement("section");
 sect_1_our.classList.add("sect_1_our");
